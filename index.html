@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kishore Kumar S | AI & Data Science Student, Data Analyst & Web Developer</title>
+    <meta name="description" content="Official portfolio of Kishore Kumar S - B.Tech Artificial Intelligence & Data Science student, Data Analyst Intern, Web Developer, and UI/UX Designer.">
+    <meta name="keywords" content="Kishore Kumar S, Data Analyst, Web Developer, AI, Data Science, Python, Power BI, SQL, Figma, Frontend Developer">
+    <meta name="author" content="Kishore Kumar S">
+    <meta name="theme-color" content="#6366f1">
+
+    <!-- Preconnect & Google Fonts (Max 2 families: Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Design System Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        (function () {
+            if (typeof emailjs !== 'undefined') {
+                emailjs.init({
+                    publicKey: "Q2Nwxk9RUkBTeSoh5",
+                });
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Accessible Skip to Main Content Landmark -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Ambient Glow Background & Grid -->
+    <div class="bg-ambient" aria-hidden="true">
+        <div class="ambient-blob blob-1"></div>
+        <div class="ambient-blob blob-2"></div>
+        <div class="ambient-blob blob-3"></div>
+    </div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- Custom Cursor (Desktop Pointer Only) -->
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-outline" aria-hidden="true"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <!-- Page Transition Overlay -->
+    <div class="page-transition" aria-hidden="true"></div>
+
+    <!-- Initial Page Loader -->
+    <div class="loader" aria-label="Loading website content">
+        <div class="loader-inner">
+            <div class="loader-brand">KISHORE KUMAR S</div>
+            <div class="loader-track">
+                <div class="loader-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo" aria-label="Kishore Kumar S Homepage">
+                    <div class="nav-logo-badge" aria-hidden="true">K</div>
+                    <span>Kishore Kumar S</span>
+                </a>
+
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="certifications.html" class="nav-link">Certifications</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle-btn" aria-label="Switch to Light Mode" type="button">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <button class="hamburger-btn" aria-label="Open Navigation Menu" aria-expanded="false" type="button">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Accessible Mobile Navigation Drawer -->
+    <div class="mobile-nav-backdrop" aria-hidden="true"></div>
+    <aside class="mobile-nav-drawer" aria-label="Mobile Navigation Menu">
+        <div class="mobile-drawer-header">
+            <a href="index.html" class="nav-logo" aria-label="Kishore Kumar S Home">
+                <div class="nav-logo-badge" aria-hidden="true">K</div>
+                <span>Kishore</span>
+            </a>
+            <button class="close-drawer-btn" aria-label="Close Navigation Menu" type="button">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <nav class="mobile-nav-list" aria-label="Mobile Menu Links">
+            <a href="index.html" class="active" aria-current="page"><i class="fas fa-home" aria-hidden="true"></i> Home</a>
+            <a href="about.html"><i class="fas fa-user" aria-hidden="true"></i> About</a>
+            <a href="skills.html"><i class="fas fa-layer-group" aria-hidden="true"></i> Skills</a>
+            <a href="projects.html"><i class="fas fa-laptop-code" aria-hidden="true"></i> Projects</a>
+            <a href="education.html"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Education</a>
+            <a href="certifications.html"><i class="fas fa-certificate" aria-hidden="true"></i> Certifications</a>
+            <a href="contact.html"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
+        </nav>
+
+        <div class="mobile-drawer-footer">
+            <a href="https://github.com/kishore098776" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kishore-kumar-252a0b339" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="mailto:kishorekumarsk8754@gmail.com" class="social-icon-btn" aria-label="Send Email">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content Landmark -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section" aria-label="Introduction and Overview">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content reveal-on-scroll">
+                        <div class="hero-status-pill">
+                            <span class="status-dot" aria-hidden="true"></span>
+                            <span>Available for Opportunities</span>
+                        </div>
+
+                        <h1 class="hero-name">
+                            Hi, I'm <span class="text-gradient">Kishore Kumar S</span>
+                        </h1>
+
+                        <div class="hero-type-wrapper">
+                            <span>I am an </span>
+                            <span id="typed-text">AI & Data Science Specialist</span>
+                        </div>
+
+                        <p class="hero-description">
+                            B.Tech Artificial Intelligence &amp; Data Science student with hands-on industry experience in 
+                            <strong>Data Analytics (Power BI, SQL, Python, Excel)</strong>, 
+                            <strong>Web Development (HTML5, CSS3, JavaScript)</strong>, and 
+                            <strong>UI/UX Design (Figma, Canva)</strong>. Passionate about transforming complex data into clear insights and intelligent web products.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="projects.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-rocket" aria-hidden="true"></i> Explore Projects
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary btn-lg">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i> Get In Touch
+                            </a>
+                        </div>
+
+                        <div class="hero-socials">
+                            <span style="font-size: 0.9rem; color: var(--text-muted); font-weight: 600;">Connect:</span>
+                            <a href="https://github.com/kishore098776" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kishore-kumar-252a0b339" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                            <a href="mailto:kishorekumarsk8754@gmail.com" class="social-icon-btn" aria-label="Send Email">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual-wrapper reveal-on-scroll delay-2">
+                        <div class="hero-avatar-card">
+                            <div class="hero-avatar-inner">
+                                <img src="SAVE_20260911_163924.jpg.jpeg" alt="Portrait photo of Kishore Kumar S" class="hero-avatar-img" width="360" height="360" decoding="async" fetchpriority="high">
+                            </div>
+                        </div>
+
+                        <!-- Floating Visual Chips -->
+                        <div class="floating-chip chip-1" aria-hidden="true">
+                            <i class="fas fa-chart-pie" style="color: #06b6d4;"></i>
+                            <span>Data Analytics &amp; BI</span>
+                        </div>
+
+                        <div class="floating-chip chip-2" aria-hidden="true">
+                            <i class="fas fa-code" style="color: #6366f1;"></i>
+                            <span>Web Engineering</span>
+                        </div>
+
+                        <div class="floating-chip chip-3" aria-hidden="true">
+                            <i class="fas fa-brain" style="color: #ec4899;"></i>
+                            <span>AI &amp; Automation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Highlight Row -->
+                <div class="stats-grid reveal-on-scroll delay-3">
+                    <div class="stat-card">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label">Internship Experiences</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Featured Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Technical Tools &amp; Skills</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Dedication &amp; Focus</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about" aria-label="About Kishore Kumar S">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-user" aria-hidden="true"></i> About Me</div>
+                    <h2 class="section-title">Bridging Data Analytics &amp; <span class="text-gradient">Modern Web Engineering</span></h2>
+                    <p class="section-subtitle">A multidisciplinary engineer driven by data insights, intuitive UI design, and modern technology.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-visual reveal-on-scroll">
+                        <div class="glass-card" style="padding: 2.5rem; text-align: center;">
+                            <div style="width: 140px; height: 140px; margin: 0 auto 1.5rem; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); box-shadow: 0 0 25px var(--primary-glow);">
+                                <img src="SAVE_20260911_163924.jpg.jpeg" alt="Kishore Kumar S" width="140" height="140" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 0.3rem;">Kishore Kumar S</h3>
+                            <p style="color: var(--secondary-light); font-weight: 600; font-size: 0.95rem; margin-bottom: 1.2rem;">AI &amp; Data Science Specialist</p>
+                            
+                            <div style="display: flex; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tag-pill">Python</span>
+                                <span class="tag-pill">Power BI</span>
+                                <span class="tag-pill">SQL</span>
+                                <span class="tag-pill">JavaScript</span>
+                                <span class="tag-pill">Figma</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-narrative reveal-on-scroll delay-1">
+                        <p>
+                            I am currently pursuing my <strong>B.Tech in Artificial Intelligence and Data Science</strong>. My journey blends analytical rigor with front-end creativity — turning raw, structured datasets into actionable visual insights and building high-performance, responsive web interfaces.
+                        </p>
+                        
+                        <div class="about-highlight-box">
+                            <strong style="color: var(--text-main); display: block; margin-bottom: 0.3rem;">Industry Experience:</strong>
+                            <span>Completed a Data Analyst internship at <strong>BlueStock</strong> building dashboards and reports, alongside Web Development internships at <strong>TamizhanSkills RISE</strong> and <strong>iStudio</strong> creating modern user interfaces.</span>
+                        </div>
+
+                        <p>
+                            Whether designing intuitive wireframes in Figma, structuring relational schemas in SQL, producing executive dashboards in Power BI, or coding web apps in HTML/CSS/JavaScript, my goal is always to deliver clean, scalable, and impactful solutions.
+                        </p>
+
+                        <div class="about-badges-grid">
+                            <div class="about-badge-item">
+                                <div class="about-badge-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                                <div class="about-badge-info">
+                                    <h4>Data Driven</h4>
+                                    <p>EDA, Dashboards &amp; BI</p>
+                                </div>
+                            </div>
+                            <div class="about-badge-item">
+                                <div class="about-badge-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                                <div class="about-badge-info">
+                                    <h4>Clean Code</h4>
+                                    <p>Responsive Web Dev</p>
+                                </div>
+                            </div>
+                            <div class="about-badge-item">
+                                <div class="about-badge-icon"><i class="fas fa-pencil-ruler" aria-hidden="true"></i></div>
+                                <div class="about-badge-info">
+                                    <h4>UI/UX Design</h4>
+                                    <p>Figma &amp; Prototyping</p>
+                                </div>
+                            </div>
+                            <div class="about-badge-item">
+                                <div class="about-badge-icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+                                <div class="about-badge-info">
+                                    <h4>AI Assisted</h4>
+                                    <p>Generative AI &amp; Studio</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Internships Section -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.01);" aria-label="Internships and Work History">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-briefcase" aria-hidden="true"></i> Experience</div>
+                    <h2 class="section-title">Internships &amp; <span class="text-gradient">Industry Practical Work</span></h2>
+                    <p class="section-subtitle">Real-world experience delivering data dashboards and frontend web platforms.</p>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- BlueStock -->
+                    <div class="exp-card reveal-on-scroll">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Data Analyst Intern</h3>
+                                <div class="exp-company">BlueStock</div>
+                            </div>
+                            <span class="exp-period">Completed</span>
+                        </div>
+                        <div class="exp-body">
+                            Developed comprehensive analytics dashboards, processed structured data, performed Exploratory Data Analysis (EDA), and extracted actionable business trends to support decision-making.
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag-pill">Power BI</span>
+                            <span class="tag-pill">Microsoft Excel</span>
+                            <span class="tag-pill">SQL</span>
+                            <span class="tag-pill">Data Visualization</span>
+                            <a href="BFDA53357.jpg" target="_blank" rel="noopener noreferrer" aria-label="View BlueStock Internship Certificate"><span class="tag-pill"><i class="fas fa-certificate" aria-hidden="true"></i> Certificate</span></a>
+                        </div>
+                    </div>
+
+                    <!-- TamizhanSkills RISE -->
+                    <div class="exp-card reveal-on-scroll delay-1">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Web Development Intern</h3>
+                                <div class="exp-company">TamizhanSkills RISE</div>
+                            </div>
+                            <span class="exp-period">Completed</span>
+                        </div>
+                        <div class="exp-body">
+                            Built responsive, user-friendly frontend web interfaces with cross-browser compatibility, modern CSS styling, interactive components, and optimized layout architecture.
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Responsive Design</span>
+                            <a href="9685326_Build_Website_With_AI_9387082.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Web Development Certificate"><span class="tag-pill"><i class="fas fa-certificate" aria-hidden="true"></i> Certificate</span></a>
+                        </div>
+                    </div>
+
+                    <!-- iStudio -->
+                    <div class="exp-card reveal-on-scroll delay-2">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Web Development Intern</h3>
+                                <div class="exp-company">iStudio</div>
+                            </div>
+                            <span class="exp-period">Completed</span>
+                        </div>
+                        <div class="exp-body">
+                            Collaborated on web platform design and development, translating UI/UX mockups into interactive web pages with smooth navigation and high accessibility.
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag-pill">Web Design</span>
+                            <span class="tag-pill">Frontend Dev</span>
+                            <span class="tag-pill">Figma</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">UI/UX</span>
+                        </div>
+                    </div>
+
+                    <!-- SWYNEX Technologies -->
+                    <div class="exp-card reveal-on-scroll">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-role">Data Analyst Intern</h3>
+                                <div class="exp-company">SWYNEX Technologies</div>
+                            </div>
+                            <span class="exp-period">Ongoing</span>
+                        </div>
+                        <div class="exp-body">
+                            Worked on project-based Data &amp; AI analytics, cleaning e-commerce datasets with Excel, performing EDA, calculating core metrics, identifying trend patterns, and building PivotTables and visuals for business insights.
+                        </div>
+                        <div class="exp-tags">
+                            <span class="tag-pill">Excel Analytics</span>
+                            <span class="tag-pill">Data Cleaning</span>
+                            <span class="tag-pill">EDA</span>
+                            <span class="tag-pill">PivotTables</span>
+                            <span class="tag-pill">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Domain Matrix -->
+        <section class="section" id="skills" aria-label="Technical Skills Matrix">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-layer-group" aria-hidden="true"></i> Technical Matrix</div>
+                    <h2 class="section-title">Skills &amp; <span class="text-gradient">Core Capabilities</span></h2>
+                    <p class="section-subtitle">A curated toolkit spanning data analytics, modern programming, AI tooling, and interface design.</p>
+                </div>
+
+                <div class="skills-domain-grid">
+                    <!-- Programming -->
+                    <div class="skill-domain-card reveal-on-scroll">
+                        <div class="skill-domain-head">
+                            <div class="domain-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Programming &amp; Web</h3>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Core development stack</p>
+                            </div>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fab fa-html5" style="color: #e34f26;" aria-hidden="true"></i> HTML5</span>
+                            <span class="skill-chip"><i class="fab fa-css3-alt" style="color: #1572b6;" aria-hidden="true"></i> CSS3</span>
+                            <span class="skill-chip"><i class="fab fa-js" style="color: #f7df1e;" aria-hidden="true"></i> JavaScript</span>
+                            <span class="skill-chip"><i class="fab fa-python" style="color: #3776ab;" aria-hidden="true"></i> Python</span>
+                            <span class="skill-chip"><i class="fas fa-mobile-alt" aria-hidden="true"></i> Responsive Layouts</span>
+                            <span class="skill-chip"><i class="fas fa-magic" aria-hidden="true"></i> Vibe Coding</span>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="skill-domain-card reveal-on-scroll delay-1">
+                        <div class="skill-domain-head">
+                            <div class="domain-icon cyan"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Data Analytics &amp; BI</h3>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Insights &amp; visualization</p>
+                            </div>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fas fa-chart-bar" style="color: #f2c811;" aria-hidden="true"></i> Power BI</span>
+                            <span class="skill-chip"><i class="fas fa-file-excel" style="color: #107c41;" aria-hidden="true"></i> Microsoft Excel</span>
+                            <span class="skill-chip"><i class="fas fa-database" style="color: #336791;" aria-hidden="true"></i> SQL Queries</span>
+                            <span class="skill-chip"><i class="fas fa-filter" aria-hidden="true"></i> Data Cleaning</span>
+                            <span class="skill-chip"><i class="fas fa-search-plus" aria-hidden="true"></i> Exploratory Data Analysis</span>
+                            <span class="skill-chip"><i class="fas fa-chart-area" aria-hidden="true"></i> Dashboard Dev</span>
+                            <span class="skill-chip"><i class="fas fa-lightbulb" aria-hidden="true"></i> Trend Analysis</span>
+                        </div>
+                    </div>
+
+                    <!-- AI Tools -->
+                    <div class="skill-domain-card reveal-on-scroll delay-2">
+                        <div class="skill-domain-head">
+                            <div class="domain-icon amber"><i class="fas fa-brain" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>AI Tools &amp; Platforms</h3>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">AI-assisted development</p>
+                            </div>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fas fa-robot" aria-hidden="true"></i> ChatGPT</span>
+                            <span class="skill-chip"><i class="fas fa-robot" aria-hidden="true"></i> Microsoft Copilot</span>
+                            <span class="skill-chip"><i class="fas fa-microchip" aria-hidden="true"></i> Google AI Studio</span>
+                            <span class="skill-chip"><i class="fas fa-comment-dots" aria-hidden="true"></i> Claude AI</span>
+                            <span class="skill-chip"><i class="fas fa-gem" aria-hidden="true"></i> Google Gemini</span>
+                            <span class="skill-chip"><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i> Framer AI</span>
+                            <span class="skill-chip"><i class="fas fa-bolt" aria-hidden="true"></i> Durable AI</span>
+                        </div>
+                    </div>
+
+                    <!-- Design & UX -->
+                    <div class="skill-domain-card reveal-on-scroll delay-3">
+                        <div class="skill-domain-head">
+                            <div class="domain-icon emerald"><i class="fas fa-palette" aria-hidden="true"></i></div>
+                            <div>
+                                <h3>Design &amp; Ecosystem</h3>
+                                <p style="font-size: 0.85rem; color: var(--text-muted); margin: 0;">Prototyping &amp; deployment</p>
+                            </div>
+                        </div>
+                        <div class="skill-chips-wrap">
+                            <span class="skill-chip"><i class="fab fa-figma" style="color: #f24e1e;" aria-hidden="true"></i> Figma</span>
+                            <span class="skill-chip"><i class="fas fa-paint-brush" style="color: #00c4cc;" aria-hidden="true"></i> Canva</span>
+                            <span class="skill-chip"><i class="fab fa-github" aria-hidden="true"></i> GitHub</span>
+                            <span class="skill-chip"><i class="fas fa-cloud" aria-hidden="true"></i> Netlify</span>
+                            <span class="skill-chip"><i class="fas fa-server" aria-hidden="true"></i> Vercel</span>
+                            <span class="skill-chip"><i class="fas fa-code-branch" aria-hidden="true"></i> Git Workflow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section" id="projects" aria-label="Featured Projects Catalog">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-laptop-code" aria-hidden="true"></i> Portfolio</div>
+                    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+                    <p class="section-subtitle">Real-world applications spanning web platforms, AI assistants, and digital tools.</p>
+                </div>
+
+                <!-- Interactive Project Filters -->
+                <div class="filter-tabs reveal-on-scroll" role="tablist" aria-label="Filter Projects by Category">
+                    <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects</button>
+                    <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web Development</button>
+                    <button class="filter-btn" data-filter="ai" role="tab" aria-selected="false">AI &amp; Chatbots</button>
+                    <button class="filter-btn" data-filter="fullstack" role="tab" aria-selected="false">Applications</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: CartCraZe -->
+                    <article class="project-card reveal-on-scroll" data-category="web fullstack">
+                        <div class="project-top">
+                            <div class="project-icon-box">
+                                <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://e-commerce-website-01.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="CartCraZe Live Demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">CartCraZe – E-Commerce Platform</h3>
+                            <p class="project-desc">
+                                A clean, responsive e-commerce web platform engineered for local shops and small businesses with online product browsing, cart calculation, and smooth checkout workflows.
+                            </p>
+                        </div>
+                        <a href="https://e-commerce-website-01.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Netlify</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: College Enquiry Chatbot -->
+                    <article class="project-card reveal-on-scroll delay-1" data-category="ai web fullstack">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-cyan);">
+                                <i class="fas fa-comments" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://college-enquiry-chatbot-1.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="College Chatbot Live Preview">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">College Enquiry Chatbot</h3>
+                            <p class="project-desc">
+                                An AI-assisted student admission chatbot and inquiry management solution answering academic queries, collecting applicant details, and streamlining admissions.
+                            </p>
+                        </div>
+                        <a href="https://college-enquiry-chatbot-1.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML/CSS</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Python</span>
+                            <span class="tag-pill">Vercel</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Digital Legal Awareness Platform -->
+                    <article class="project-card reveal-on-scroll delay-2" data-category="ai web">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-amber);">
+                                <i class="fas fa-scale-balanced" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221fpoWOxlqP_O5Kyr3YGeR-07FVYzw3u19%22%5D,%22action%22:%22open%22,%22userId%22:%22102206620325201937838%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Google AI Studio Prompt Model">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Digital Legal Awareness Platform</h3>
+                            <p class="project-desc">
+                                A specialized web knowledge base built with Google AI Studio to democratize access to essential legal information, rights, and digital services for underserved communities.
+                            </p>
+                        </div>
+                        <a href="https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221fpoWOxlqP_O5Kyr3YGeR-07FVYzw3u19%22%5D,%22action%22:%22open%22,%22userId%22:%22102206620325201937838%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            View AI Studio Model <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">AI Studio</span>
+                            <span class="tag-pill">Prompt Engineering</span>
+                            <span class="tag-pill">Knowledge Base</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Plant Haven -->
+                    <article class="project-card reveal-on-scroll" data-category="web">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-emerald);">
+                                <i class="fas fa-seedling" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://plant-buy-website.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Plant Haven Live Preview">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Plant Haven – Botanical Store</h3>
+                            <p class="project-desc">
+                                An aesthetic, nature-inspired e-commerce storefront allowing botanical enthusiasts to discover indoor plants, view care instructions, and manage orders.
+                            </p>
+                        </div>
+                        <a href="https://plant-buy-website.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Netlify</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Smart Attendance System -->
+                    <article class="project-card reveal-on-scroll delay-1" data-category="fullstack web">
+                        <div class="project-top">
+                            <div class="project-icon-box">
+                                <i class="fas fa-user-check" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://github.com/kishore098776/Smart-Attendence-System" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="GitHub Repository for Smart Attendance">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Smart Attendance System</h3>
+                            <div class="project-note">
+                                <i class="fas fa-shield-alt" aria-hidden="true"></i> OTP-based verification engine
+                            </div>
+                            <p class="project-desc">
+                                Digital student and workforce attendance tracking system featuring secure OTP authentication, automated logging, and error-free attendance records.
+                            </p>
+                        </div>
+                        <a href="https://github.com/kishore098776/Smart-Attendence-System" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            GitHub Repository <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">OTP Auth</span>
+                            <span class="tag-pill">HTML/CSS</span>
+                            <span class="tag-pill">GitHub</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Smart Campus AI -->
+                    <article class="project-card reveal-on-scroll" data-category="web ai">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-cyan);">
+                                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://smart-campus-ai-system-9bjx.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Smart Campus AI Live Demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Smart Campus AI System</h3>
+                            <p class="project-desc">
+                                An AI-powered smart campus platform designed to simplify academic activities, providing students and faculty with intelligent access to campus services.
+                            </p>
+                        </div>
+                        <a href="https://smart-campus-ai-system-9bjx.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">AI Assistance</span>
+                            <span class="tag-pill">Vercel</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Hotel Food Ordering System -->
+                    <article class="project-card reveal-on-scroll delay-1" data-category="web fullstack">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-amber);">
+                                <i class="fas fa-utensils" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://kason-ih.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Hotel Food Ordering Live Demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Hotel Food Ordering System</h3>
+                            <p class="project-desc">
+                                Digital dine-in ordering platform allowing hotel guests to place orders directly from tables, transmitting requests in real-time to the kitchen workflow.
+                            </p>
+                        </div>
+                        <a href="https://kason-ih.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Netlify</span>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Online Food Ordering Website -->
+                    <article class="project-card reveal-on-scroll delay-2" data-category="web fullstack">
+                        <div class="project-top">
+                            <div class="project-icon-box" style="background: var(--grad-primary);">
+                                <i class="fas fa-bowl-food" aria-hidden="true"></i>
+                            </div>
+                            <div class="project-links-group">
+                                <a href="https://food-order-oh.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link-icon" aria-label="Online Food Ordering Live Demo">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="project-title">Online Food Delivery Portal</h3>
+                            <p class="project-desc">
+                                A food delivery application allowing users to discover restaurants, explore categorized menus, place orders, and manage real-time meal deliveries.
+                            </p>
+                        </div>
+                        <a href="https://food-order-oh.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-cta-link">
+                            Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </a>
+                        <div class="project-tags">
+                            <span class="tag-pill">HTML5</span>
+                            <span class="tag-pill">CSS3</span>
+                            <span class="tag-pill">JavaScript</span>
+                            <span class="tag-pill">Netlify</span>
+                        </div>
+                    </article>
+                </div>
+
+                <div style="text-align: center; margin-top: 3.5rem;" class="reveal-on-scroll">
+                    <a href="projects.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-cubes" aria-hidden="true"></i> View Full Projects Catalog
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Preview -->
+        <section class="section" style="background: rgba(255, 255, 255, 0.01);" aria-label="Academic Education and Certifications Overview">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Academic Pathway</div>
+                    <h2 class="section-title">Education &amp; <span class="text-gradient">Certifications</span></h2>
+                    <p class="section-subtitle">Formal training in Artificial Intelligence, Data Science, and certified technical competencies.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Education Column -->
+                    <div class="reveal-on-scroll">
+                        <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                            <i class="fas fa-university" style="color: var(--primary);" aria-hidden="true"></i> Academic Degree
+                        </h3>
+
+                        <div class="timeline-list" style="padding-left: 0.5rem;">
+                            <div class="timeline-entry">
+                                <div class="timeline-card">
+                                    <div class="timeline-meta">
+                                        <h4 class="timeline-degree">B.Tech in Artificial Intelligence &amp; Data Science</h4>
+                                        <span class="timeline-date">Currently Pursuing</span>
+                                    </div>
+                                    <div class="timeline-institution">
+                                        <i class="fas fa-book-open" aria-hidden="true"></i> Bachelor of Technology
+                                    </div>
+                                    <p class="timeline-desc">
+                                        Comprehensive curriculum covering Machine Learning, Data Analytics, Python programming, Database Management Systems (SQL), Algorithm Design, and Web Architectures.
+                                    </p>
+                                    <div style="margin-top: 1rem; display: flex; gap: 0.4rem; flex-wrap: wrap;">
+                                        <span class="tag-pill">AI &amp; ML</span>
+                                        <span class="tag-pill">Data Analytics</span>
+                                        <span class="tag-pill">SQL RDBMS</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications Column -->
+                    <div class="reveal-on-scroll delay-1">
+                        <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.6rem;">
+                            <i class="fas fa-certificate" style="color: var(--secondary-light);" aria-hidden="true"></i> Verified Credentials
+                        </h3>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <!-- Deloitte -->
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper" style="background: var(--grad-primary);">
+                                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Data Analytics — Deloitte</h4>
+                                    <p>Power BI Dashboards, SQL Queries &amp; Exploratory Data Analysis</p>
+                                    <div class="exp-tags">
+                                        <a href="deloitte certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Deloitte Certificate PDF"><span class="tag-pill"><i class="fas fa-file-pdf" aria-hidden="true"></i> View Certificate PDF</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Build Website With AI -->
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper">
+                                    <i class="fas fa-code" aria-hidden="true"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Web Development Specialization</h4>
+                                    <p>HTML5, CSS3, JavaScript &amp; AI-assisted development tools</p>
+                                    <div class="exp-tags">
+                                        <a href="9685326_Build_Website_With_AI_9387082.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Web Development Certificate PDF"><span class="tag-pill"><i class="fas fa-file-pdf" aria-hidden="true"></i> View Certificate PDF</span></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- UI/UX Design -->
+                            <div class="cert-card">
+                                <div class="cert-icon-wrapper" style="background: var(--grad-amber);">
+                                    <i class="fas fa-palette" aria-hidden="true"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Certified UI/UX Designer — Simplilearn &amp; Forage</h4>
+                                    <p>Figma Wireframing, Layouts, Typography &amp; Interactive Design Systems</p>
+                                    <div class="exp-tags">
+                                        <a href="UIUX.pdf" target="_blank" rel="noopener noreferrer" aria-label="View UI/UX Certificate PDF"><span class="tag-pill"><i class="fas fa-file-pdf" aria-hidden="true"></i> UI/UX PDF</span></a>
+                                        <a href="Simplilearn Certificate.pdf" target="_blank" rel="noopener noreferrer" aria-label="View Simplilearn Certificate PDF"><span class="tag-pill"><i class="fas fa-file-pdf" aria-hidden="true"></i> Simplilearn PDF</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact" aria-label="Contact and Collaboration">
+            <div class="container">
+                <div class="section-header reveal-on-scroll">
+                    <div class="section-badge"><i class="fas fa-envelope" aria-hidden="true"></i> Get In Touch</div>
+                    <h2 class="section-title">Let's Work <span class="text-gradient">Together</span></h2>
+                    <p class="section-subtitle">Have a project, internship opportunity, or question? Send me a message and I'll reply promptly.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-stack reveal-on-scroll">
+                        <div class="contact-info-card">
+                            <div class="contact-icon-box"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+                            <div class="contact-text-box">
+                                <h4>Email Address</h4>
+                                <a href="mailto:kishorekumarsk8754@gmail.com">kishorekumarsk8754@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon-box" style="background: var(--grad-cyan);"><i class="fas fa-phone-alt" aria-hidden="true"></i></div>
+                            <div class="contact-text-box">
+                                <h4>Phone / WhatsApp</h4>
+                                <a href="tel:+917305138757">+91 7305138757</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="contact-icon-box" style="background: var(--grad-amber);"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="contact-text-box">
+                                <h4>Location</h4>
+                                <p>India (Available for Remote &amp; On-Site)</p>
+                            </div>
+                        </div>
+
+                        <!-- Platform Ecosystem Preview -->
+                        <div style="margin-top: 1rem;">
+                            <h3 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-muted);">
+                                Active Platforms &amp; Profiles:
+                            </h3>
+                            <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                                <a href="https://github.com/kishore098776" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/kishore-kumar-252a0b339" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+                                <a href="mailto:kishorekumarsk8754@gmail.com" class="social-icon-btn" aria-label="Send Direct Email">
+                                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card reveal-on-scroll delay-1">
+                        <form id="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="user_name" class="form-label">Your Name</label>
+                                <input type="text" id="user_name" name="user_name" class="form-input" placeholder="e.g. Alex Smith" required autocomplete="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user_email" class="form-label">Your Email</label>
+                                <input type="email" id="user_email" name="user_email" class="form-input" placeholder="e.g. alex@example.com" required autocomplete="email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry / Internship Role">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project, idea, or role..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Site Footer Landmark -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>Kishore Kumar S</h3>
+                    <p>AI &amp; Data Science Student | Data Analyst | Web Developer</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="skills.html">Skills</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="education.html">Education</a>
+                    <a href="certifications.html">Certifications</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kishore Kumar S. All rights reserved.</p>
+                <div style="display: flex; gap: 1rem;">
+                    <a href="https://github.com/kishore098776" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/kishore-kumar-252a0b339" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted);"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Script Dependencies & App Controller -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
